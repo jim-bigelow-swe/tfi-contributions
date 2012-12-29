@@ -1,0 +1,17 @@
+<%= form_for(@contributor_name) do |f| %>
+  <% if @contributor_name.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@contributor_name.errors.count, "error") %> prohibited this contributor_name from being saved:</h2>
+
+      <ul>
+      <% @contributor_name.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

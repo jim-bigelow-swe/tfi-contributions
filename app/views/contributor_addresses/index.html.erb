@@ -1,0 +1,22 @@
+<h1>Listing contributor_addresses</h1>
+
+<table>
+  <tr>
+    <th>Mailing</th>
+    <th>City</th>
+    <th>State</th>
+    <th>Zip</th>
+    <th>More...</th>
+  </tr>
+
+<% @contributor_addresses.each do |contributor_address| %>
+  <tr>
+    <td><%= contributor_address.mailing %></td>
+    <td><%= contributor_address.city %></td>
+    <td><%= contributor_address.state %></td>
+    <td><%= contributor_address.zip %></td>
+    <td><%= link_to 'Show', contributor_address %></td>
+  </tr>
+<% end %>
+</table>
+

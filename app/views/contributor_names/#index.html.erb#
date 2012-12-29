@@ -1,0 +1,20 @@
+<h1>Listing contributor_names</h1>
+
+<table>
+  <tr>
+    <th>Contributor</th>
+    <th>Type</th>
+    <th>Address</th>
+    <th>More...</th>
+  </tr>
+
+<% @contributor_names.each do |contributor_name| %>
+  <tr>
+    <td><%= "#{contributor_name.last_name}, #{contributor_name.first}, #{contributor_name.middle}" %></td>
+    <td><%= contributor_name.contributor_type %></td>
+    <td>TBD</td>
+    <td><%= link_to 'Show', contributor_name %></td>
+  </tr>
+<% end %>
+</table>
+

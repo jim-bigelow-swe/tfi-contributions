@@ -1,0 +1,26 @@
+<h1>Editing contribution_record</h1>
+
+<%= render 'form' %>
+
+<table>
+  <tr> <td>election_year </td><td><%= @contribution_record.election_year %></td> </tr>
+  <tr> <td>cand_last     </td><td><%= @contribution_record.cand_last %></td></tr>
+  <tr> <td>cand_first    </td><td><%= @contribution_record.cand_first %></td></tr>
+  <tr> <td>cand_mid      </td><td><%= @contribution_record.cand_mid %></td></tr>
+  <tr> <td>party         </td><td><%= @contribution_record.party %></td></tr>
+  <tr> <td>district      </td><td><%= @contribution_record.district %></td></tr>
+  <tr> <td>office        </td><td><%= @contribution_record.office %></td></tr>
+  <tr> <td>contr_date    </td><td><%= @contribution_record.contr_date %></td></tr>
+  <tr> <td>contr_amount  </td><td><%= @contribution_record.contr_amount %></td></tr>
+  <tr> <td>contr_last    </td><td><%= @contribution_record.contr_last %></td></tr>
+  <tr> <td>contr_first   </td><td><%= @contribution_record.contr_first %></td></tr>
+  <tr> <td>contr_mid     </td><td><%= @contribution_record.contr_mid %></td></tr>
+  <tr> <td>contr_type    </td><td><%= @contribution_record.contr_type %></td></tr>
+  <tr> <td>contr_mailing </td><td><%= @contribution_record.contr_mailing %></td></tr>
+  <tr> <td>contr_city    </td><td><%= @contribution_record.contr_city    %></td></tr>
+  <tr> <td>contr_st      </td><td><%= @contribution_record.contr_st      %></td></tr>
+  <tr> <td>contr_zip     </td><td><%= @contribution_record.contr_zip     %></td></tr>
+</table>
+
+<%= link_to 'Show', @contribution_record %> |
+<%= link_to 'Back', contribution_records_path %>
